@@ -18,13 +18,19 @@ public class ConverterApplication {
         }
 
         OutputFormat outputFormat = OutputFormat.TABLE;
-        String csvFilePath;
+        String csvFilePath = null;
 
-        if (args.length == 1) {
-            csvFilePath = args[0];
-        } else {
-            outputFormat = getOutputFormat(args[0]);
-            csvFilePath = args[1];
+        switch (args.length) {
+            case 1:
+                csvFilePath = args[0];
+                break;
+            case 2:
+                outputFormat = getOutputFormat(args[0]);
+                csvFilePath = args[1];
+                break;
+            default:
+                System.out.println("No input file defined");
+                System.exit(1);
         }
 
         ConverterApplication converterApplication = new ConverterApplication(outputFormat, csvFilePath);
@@ -35,16 +41,14 @@ public class ConverterApplication {
         try {
             return OutputFormat.valueOf(format.toUpperCase());
         } catch (IllegalArgumentException e) {
-            System.out.println("Invalid output format. Supported formats: JSON, XML, TABLE");
+            System.out.println("Invalid output format. Supported formats: JSON, XML and TABLE");
             System.exit(1);
-            return null; // Unreachable, added to satisfy the compiler
+            return null;
         }
     }
 
     private void run() {
         System.out.println("Output Format: " + outputFormat);
         System.out.println("CSV File Path: " + csvFilePath);
-
-        // Now you're ready to proceed with integrating Spring Context and defining beans.
     }
 }
