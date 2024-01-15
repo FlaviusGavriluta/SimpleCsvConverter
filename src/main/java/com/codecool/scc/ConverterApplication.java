@@ -1,20 +1,40 @@
 package com.codecool.scc;
 
 import com.codecool.scc.model.OutputFormat;
+import com.codecool.scc.strategy.FormatStrategy;
+import com.codecool.scc.strategy.JsonFormatStrategy;
+import com.codecool.scc.strategy.TableFormatStrategy;
+import com.codecool.scc.strategy.XmlFormatStrategy;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ConverterApplication {
     private OutputFormat outputFormat;
     private String csvFilePath;
-    private SimpleCsvConverter csvConverter;
+    private SimpleCsvConverter simpleCsvConverter;
 
     public ConverterApplication(OutputFormat outputFormat, String csvFilePath) {
         this.outputFormat = outputFormat;
         this.csvFilePath = csvFilePath;
-        this.csvConverter = new SimpleCsvConverter();
+        initializeSimpleCsvConverter();
+    }
+
+    private void initializeSimpleCsvConverter() {
+        Map<OutputFormat, FormatStrategy> strategyMap = new HashMap<>();
+        strategyMap.put(OutputFormat.JSON, new JsonFormatStrategy());
+        strategyMap.put(OutputFormat.XML, new XmlFormatStrategy());
+        strategyMap.put(OutputFormat.TABLE, new TableFormatStrategy());
+
+        this.simpleCsvConverter = new SimpleCsvConverter(strategyMap);
     }
 
     public static void main(String[] args) {
-        if (args.length < 1 || args.length > 2) {
+        if (args.length == 0) {
+            System.out.println("No input file defined");
+            System.exit(1);
+        } else if (args.length > 2) {
             System.out.println("Invalid number of arguments. Usage: java -jar app.jar [format] file.csv");
             System.exit(1);
         }
@@ -50,6 +70,7 @@ public class ConverterApplication {
     }
 
     private void run() {
-        csvConverter.convert(csvFilePath,outputFormat.name().toLowerCase());
+        File csvFile = new File(csvFilePath);
+        simpleCsvConverter.convert(csvFile, outputFormat);
     }
 }
