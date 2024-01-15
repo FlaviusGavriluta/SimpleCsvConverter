@@ -5,10 +5,12 @@ import com.codecool.scc.model.OutputFormat;
 public class ConverterApplication {
     private OutputFormat outputFormat;
     private String csvFilePath;
+    private SimpleCsvConverter csvConverter;
 
     public ConverterApplication(OutputFormat outputFormat, String csvFilePath) {
         this.outputFormat = outputFormat;
         this.csvFilePath = csvFilePath;
+        this.csvConverter = new SimpleCsvConverter();
     }
 
     public static void main(String[] args) {
@@ -48,7 +50,6 @@ public class ConverterApplication {
     }
 
     private void run() {
-        System.out.println("Output Format: " + outputFormat);
-        System.out.println("CSV File Path: " + csvFilePath);
+        csvConverter.convert(csvFilePath,outputFormat.name().toLowerCase());
     }
 }
