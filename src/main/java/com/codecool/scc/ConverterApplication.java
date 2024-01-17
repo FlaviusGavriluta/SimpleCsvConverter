@@ -2,32 +2,20 @@ package com.codecool.scc;
 
 import com.codecool.scc.model.OutputFormat;
 import com.codecool.scc.strategy.FormatStrategy;
-import com.codecool.scc.strategy.JsonFormatStrategy;
+import com.codecool.scc.strategy.JSONFormatStrategy;
 import com.codecool.scc.strategy.TableFormatStrategy;
-import com.codecool.scc.strategy.XmlFormatStrategy;
+import com.codecool.scc.strategy.XMLFormatStrategy;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ConverterApplication {
     private OutputFormat outputFormat;
     private String csvFilePath;
-    private SimpleCsvConverter simpleCsvConverter;
 
     public ConverterApplication(OutputFormat outputFormat, String csvFilePath) {
         this.outputFormat = outputFormat;
         this.csvFilePath = csvFilePath;
-        initializeSimpleCsvConverter();
-    }
-
-    private void initializeSimpleCsvConverter() {
-        Map<OutputFormat, FormatStrategy> strategyMap = new HashMap<>();
-        strategyMap.put(OutputFormat.JSON, new JsonFormatStrategy());
-        strategyMap.put(OutputFormat.XML, new XmlFormatStrategy());
-        strategyMap.put(OutputFormat.TABLE, new TableFormatStrategy());
-
-        this.simpleCsvConverter = new SimpleCsvConverter(strategyMap);
     }
 
     public static void main(String[] args) {
@@ -55,8 +43,14 @@ public class ConverterApplication {
                 System.exit(1);
         }
 
+        Map<OutputFormat, FormatStrategy> formatStrategyMap = new HashMap<>();
+        formatStrategyMap.put(OutputFormat.JSON, new JSONFormatStrategy());
+        formatStrategyMap.put(OutputFormat.XML, new XMLFormatStrategy());
+        formatStrategyMap.put(OutputFormat.TABLE, new TableFormatStrategy());
+
+
         ConverterApplication converterApplication = new ConverterApplication(outputFormat, csvFilePath);
-        converterApplication.run();
+        converterApplication.run(formatStrategyMap);
     }
 
     private static OutputFormat getOutputFormat(String format) {
@@ -69,8 +63,11 @@ public class ConverterApplication {
         }
     }
 
-    private void run() {
-        File csvFile = new File(csvFilePath);
-        simpleCsvConverter.convert(csvFile, outputFormat);
+    private void run(Map<OutputFormat, FormatStrategy> formatStrategyMap) {
+        System.out.println("Output Format: " + outputFormat);
+        System.out.println("CSV File Path: " + csvFilePath);
+
+        SimpleCsvConverter csvConverter = new SimpleCsvConverter(formatStrategyMap);
+        csvConverter.convert(csvFilePath, outputFormat);
     }
 }

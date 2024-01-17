@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3accdc97-4005-4888-aa1a-86317d6451a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/FormatStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/JsonFormatStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/TableFormatStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/XmlFormatStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConverterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConverterApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/SimpleCsvConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/SimpleCsvConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConverterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConverterApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/SimpleCsvConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/JsonFormatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/JSONFormatStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/XmlFormatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/XMLFormatStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +119,7 @@
       <workItem from="1705347015176" duration="240000" />
       <workItem from="1705347296606" duration="1108000" />
       <workItem from="1705350403423" duration="1255000" />
-      <workItem from="1705352426984" duration="916000" />
+      <workItem from="1705352426984" duration="2287000" />
     </task>
     <servers />
   </component>

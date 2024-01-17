@@ -15,7 +15,8 @@ public class SimpleCsvConverter {
         this.formatStrategyMap = formatStrategyMap;
     }
 
-    public void convert(File csvFile, OutputFormat outputFormat) {
+    public void convert(String csvFilePath, OutputFormat outputFormat) {
+        File csvFile=new File(csvFilePath);
         FormatStrategy strategy = formatStrategyMap.getOrDefault(outputFormat, new TableFormatStrategy());
         strategy.convert(csvFile);
     }
