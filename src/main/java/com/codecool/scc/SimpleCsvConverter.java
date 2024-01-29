@@ -5,10 +5,10 @@ import com.codecool.scc.strategy.FormatStrategy;
 import com.codecool.scc.strategy.TableFormatStrategy;
 
 import java.io.File;
+import java.util.List;
 import java.util.Map;
 
 public class SimpleCsvConverter {
-
     private Map<OutputFormat, FormatStrategy> formatStrategyMap;
 
     public SimpleCsvConverter(Map<OutputFormat, FormatStrategy> formatStrategyMap) {
@@ -16,8 +16,10 @@ public class SimpleCsvConverter {
     }
 
     public void convert(String csvFilePath, OutputFormat outputFormat) {
-        File csvFile=new File(csvFilePath);
+        File csvFile = new File(csvFilePath);
         FormatStrategy strategy = formatStrategyMap.getOrDefault(outputFormat, new TableFormatStrategy());
         strategy.convert(csvFile);
+        FileReaderClass csvFileReader = new FileReaderClass();
+        List<String[]> csvData = csvFileReader.readData(new File("your_csv_file.csv"));
     }
 }
