@@ -50,7 +50,12 @@ public class ConverterApplication {
         System.out.println("Output Format: " + outputFormat);
         System.out.println("CSV File Path: " + csvFilePath);
 
-        List<String[]> csvData = SimpleCsvConverter.readData(new File(csvFilePath));
+        // Modify the csvFilePath to point to your sample CSV file
+        String csvFilePath = "path/to/your/sample.csv";
+
+        List<String[]> csvData = FileReaderClass.readData(new File(csvFilePath));
+        System.out.println("Data from CSV file:");
+
         OutputFormatter formatter = formatterFactory.createByFormat(outputFormat);
 
         if (formatter != null) {

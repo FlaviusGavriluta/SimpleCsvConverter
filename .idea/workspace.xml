@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3accdc97-4005-4888-aa1a-86317d6451a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConcreteOutputFormatterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/OutputFormatterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConcreteOutputFormatterFactory$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConcreteOutputFormatterFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/OutputFormatterFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/JsonOutputFormatter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/OutputFormatter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/TableOutputFormatter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/XmlOutputFormatter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConverterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConverterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/SimpleCsvConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/SimpleCsvConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConverterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConverterApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/SimpleCsvConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/SimpleCsvConverter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +118,7 @@
       <workItem from="1705352426984" duration="2287000" />
       <workItem from="1705555018977" duration="670000" />
       <workItem from="1706517779373" duration="16709000" />
-      <workItem from="1706817371508" duration="1027000" />
+      <workItem from="1706817371508" duration="1504000" />
     </task>
     <servers />
   </component>
