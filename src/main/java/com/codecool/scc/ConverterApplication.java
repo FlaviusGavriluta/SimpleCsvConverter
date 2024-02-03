@@ -4,7 +4,6 @@ import com.codecool.scc.model.OutputFormat;
 import com.codecool.scc.output.OutputFormatter;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
 public class ConverterApplication {
@@ -50,7 +49,6 @@ public class ConverterApplication {
         System.out.println("Output Format: " + outputFormat);
         System.out.println("CSV File Path: " + csvFilePath);
 
-        // Modify the csvFilePath to point to your sample CSV file
         String csvFilePath = "path/to/your/sample.csv";
 
         List<String[]> csvData = FileReaderClass.readData(new File(csvFilePath));
@@ -60,6 +58,7 @@ public class ConverterApplication {
 
         if (formatter != null) {
             formatter.printToConsole(csvData);
+            System.out.println("Conversion completed successfully.");
         } else {
             System.out.println("Invalid output format. Using default format: TABLE");
         }
