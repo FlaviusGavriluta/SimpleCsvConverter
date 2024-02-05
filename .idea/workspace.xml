@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3accdc97-4005-4888-aa1a-86317d6451a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConverterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConverterApplication.java" afterDir="false" />
     </list>
@@ -120,6 +121,8 @@
       <workItem from="1705555018977" duration="670000" />
       <workItem from="1706517779373" duration="16709000" />
       <workItem from="1706817371508" duration="1504000" />
+      <workItem from="1707132567538" duration="928000" />
+      <workItem from="1707157891275" duration="269000" />
     </task>
     <servers />
   </component>
