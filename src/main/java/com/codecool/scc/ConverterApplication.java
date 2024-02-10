@@ -3,8 +3,7 @@ package com.codecool.scc;
 import com.codecool.scc.model.OutputFormat;
 import com.codecool.scc.output.OutputFormatter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -37,7 +36,7 @@ public class ConverterApplication {
     }
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         ConverterApplication converterApplication = context.getBean(ConverterApplication.class);
 
         if (args.length < 1 || args.length > 2) {

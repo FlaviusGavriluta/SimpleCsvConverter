@@ -5,7 +5,9 @@ import com.codecool.scc.output.JsonOutputFormatter;
 import com.codecool.scc.output.OutputFormatter;
 import com.codecool.scc.output.TableOutputFormatter;
 import com.codecool.scc.output.XmlOutputFormatter;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ConcreteOutputFormatterFactory implements OutputFormatterFactory {
     @Override
     public OutputFormatter createByFormat(OutputFormat outputFormat) {

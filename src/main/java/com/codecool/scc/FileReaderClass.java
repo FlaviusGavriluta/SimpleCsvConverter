@@ -1,9 +1,12 @@
 package com.codecool.scc;
 
+import org.springframework.stereotype.Component;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class FileReaderClass {
     public static List<String[]> readData(File file) {
         List<String[]> data = new ArrayList<>();

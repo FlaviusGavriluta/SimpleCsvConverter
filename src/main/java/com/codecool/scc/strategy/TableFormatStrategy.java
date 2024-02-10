@@ -1,7 +1,10 @@
 package com.codecool.scc.strategy;
 
+import org.springframework.stereotype.Component;
+
 import java.io.File;
 
+@Component
 public class TableFormatStrategy implements FormatStrategy {
     @Override
     public void convert(File csvFile) {

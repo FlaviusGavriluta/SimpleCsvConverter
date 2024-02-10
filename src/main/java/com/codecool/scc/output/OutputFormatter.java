@@ -1,5 +1,7 @@
 package com.codecool.scc.output;
 
+import java.util.List;
+
 public interface OutputFormatter {
-    void printToConsole(Object data);
+    void printToConsole(List<String[]> data);
 }
