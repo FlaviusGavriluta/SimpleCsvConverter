@@ -1,5 +1,4 @@
-Name,Age
-John,28
-Ali,14
-Red,45
-Even,55
+Name,Age,Occupation
+Alice,30,Engineer
+Bob,25,Designer
+Charlie,35,Manager

@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3accdc97-4005-4888-aa1a-86317d6451a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/file.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConcreteOutputFormatterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConcreteOutputFormatterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConverterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/ConverterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/FileReaderClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/FileReaderClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/SimpleCsvConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/output/JsonOutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/output/JsonOutputFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/output/OutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/output/OutputFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/output/TableOutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/output/TableOutputFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/output/XmlOutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/output/XmlOutputFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/JSONFormatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/JSONFormatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/TableFormatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/TableFormatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/XMLFormatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/scc/strategy/XMLFormatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConcreteOutputFormatterFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConcreteOutputFormatterFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConcreteOutputFormatterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConcreteOutputFormatterFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConverterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/ConverterApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/FileReaderClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/FileReaderClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/SimpleCsvConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/JsonOutputFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/JsonOutputFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/TableOutputFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/TableOutputFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/XmlOutputFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/output/XmlOutputFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/strategy/JsonFormatStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/strategy/JsonFormatStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/strategy/TableFormatStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/strategy/TableFormatStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/scc/strategy/XmlFormatStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/scc/strategy/XmlFormatStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/file.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +147,7 @@
       <workItem from="1707424321827" duration="476000" />
       <workItem from="1707572444281" duration="200000" />
       <workItem from="1707582064272" duration="1730000" />
+      <workItem from="1707585469227" duration="658000" />
     </task>
     <servers />
   </component>
